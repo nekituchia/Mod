@@ -1,0 +1,235 @@
+/* Header */
+.header {
+    height: 51px;
+    background-color: #1a1a1a;
+    padding-top: 24px;
+}
+.logo {
+    display: inline-block;
+    height: 27px;
+    margin-left: 92px;
+}
+
+.navbar {
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    float: right;
+    margin-right: 135px;  
+    list-style-type: none;
+    text-align: center;
+}
+.navbar li{
+    display: inline-block;
+    margin-top: 1px;
+}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 48px;
+}
+
+/* Hero */
+
+.hero{
+    background-image: url(../images/Collaborate-section.jpg);
+    background-size:cover;
+    height: 597px;
+    position: relative;
+}
+.hero-text{
+    position: absolute;
+    bottom: 0px;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 28px;
+    color: #ffffff;
+    opacity: 0.9;
+    background-color: #1a1a1a;
+}
+
+/* How works */
+.works{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.how{
+    text-align: center
+}
+.how p{
+    font-family: Playfair Display;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #1a1a1a;
+    margin-top: 30px;
+    margin-bottom: 9px;
+}
+.feature{
+    width: 472px;
+    opacity: 0.9;
+    background-color: #1a1a1a;
+    height: 100%;
+}
+.left{
+    position: absolute;
+    left: 0;
+}
+.right{
+    position: absolute;
+    right: 0;
+}
+.center{
+    margin: 0 auto;
+    width: 745px;
+    text-align: center;
+    height: 345px;
+    margin-top: 38px;
+    box-sizing: border-box;
+    padding-top: 94px;
+}
+.feature h2{   
+    margin-top: 246px;
+    margin-left: 74px;
+    margin-bottom: 30px;
+    font-family: Playfair Display;
+    font-size: 48px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.feature p{
+    width: 354px;
+    margin-left: 74px;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    color: #fff;
+    margin-bottom: 245px;
+}
+
+/* No Bias */
+
+.bias{
+    height: 720px;
+    background-image:url(../images/image-1@3x.jpg);
+    background-size: cover;
+    position: relative;
+    margin-top: 30px;
+}
+
+
+/* Share */
+
+
+.share{
+    height: 720px;
+    background-image:url(../images/Image1@3x.jpg);
+    background-size: cover;
+    position: relative;
+    margin-top: 30px;
+}
+
+
+
+/* Apploud */
+
+
+.apploud{
+    height: 720px;
+    background-image:url(../images/Image3@3x.jpg);
+    background-size: cover;
+    position: relative;
+    margin-top: 30px;
+}
+
+/* Network */
+
+
+.network{
+    height: 500px;
+    background-image:url(../images/Image4@3x.jpg);
+    background-size: cover;
+    position: relative;
+    margin-top: 30px;
+    padding-top: 78px;
+}
+.network p{
+    width: 318px;
+    margin: 0 auto;
+    text-align: justify;
+}
+.network h2{
+    margin: 0 auto;
+    margin-bottom: 21px;
+}
+
+
+/* Mobile */
+
+
+
+@media (max-width: 767px){
+    .header{
+        padding-top: 14px;
+        height: 36px;
+    }
+    .header img{
+        height: 22px;
+    }
+    .logo{
+        margin-left: 10px;
+    }
+    .navbar{
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    .hero{
+        height: 295px;
+        background-position: 18% top;
+        background-size:220%;
+    }
+    .hero-text{
+        height: 64px;
+        opacity: 1;
+    }
+    .hero-text p{
+        display: block;
+        margin: 0 auto;
+        margin-top: 8px;
+        text-align: center;
+        font-size: 14px;
+        width: 205px;
+        height: 48px;
+    }
+    .how p{
+        font-size: 23px;
+        margin-top: 21px;
+        margin-bottom: 11px;
+    }
+}
+
+
+/* Additional */
+
+@media (min-width: 768px){
+    br {content: ""}
+}
