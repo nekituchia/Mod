@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="84" height="28" viewBox="0 0 84 28">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#B2B2B2" d="M0 0h84v28H0z"/>
+        <text fill="#FFF" font-family="Raleway-Regular, Raleway" font-size="12">
+            <tspan x="17.21" y="18">Unfollow</tspan>
+        </text>
+    </g>
+</svg>

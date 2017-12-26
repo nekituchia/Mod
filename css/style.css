@@ -1,3 +1,562 @@
+                                        /* Modals */
+                                        /* Login */
+
+.login {
+    display: block; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;  
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.7); 
+}
+.login-image{
+    width: 519px;
+    height: 519px;
+    background: url(../images/ricardo-gomez-angel-397750.png);
+    background-size: cover;
+    display: inline-block;
+    margin-top: 60px;
+    position: relative;
+    z-index: 2;
+}
+.login-image p{
+    height: 37px;
+    font-family: Playfair Display;
+    font-size: 28px;
+    letter-spacing: 1.1px;
+    text-align: center;
+    color: #fff;
+    margin-top: 240px;
+}
+
+.login-content{
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 1105px;
+    position: relative;
+}
+.login-fields{
+    width: 640px;
+    height: 640px;
+    background-color: #fff;
+    position: absolute;
+    right:0;
+    top:0;
+    text-align: center;
+}
+.login-fields h3{
+    height: 44px;
+    font-family: Playfair Display;
+    font-size: 33px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #1a1a1a;
+    margin-top: 60px;
+    margin-bottom: 105px;
+}
+.login-form{
+    width: 375px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+.login-form input{
+    width: 100%;
+}
+.email-login, .pass-login{
+    width: 276px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(51,51,51,.3);
+    margin-bottom: 36px;
+    padding: 4px 0;
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 500;
+    color: #333333;
+    
+}
+.pass-login{
+    margin-bottom: 12px;
+}
+.button-login{
+    height: 50px;
+    opacity: 0.6;
+    border: solid 1px rgba(51,51,51,.6);
+    font-family: Playfair Display;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    background-color: #fff;
+    margin-bottom: 44px;
+}
+.button-login:hover,.button-login:active{
+    cursor: pointer;
+    border: solid 1px #333;
+    opacity: 1;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+.forgot{
+    text-decoration: none;
+    color: #333;
+    opacity: .6;
+    float: right;
+    margin-bottom: 48px;
+    font-family: Raleway;
+    font-size: 16px;
+    color: #333333;
+}
+.forgot:hover{
+    opacity: 1;
+}
+.login-fields p{
+    opacity: 0.6;
+    font-family: Raleway;
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 42px;
+    margin-top: 0;
+}
+.social-login{
+    width: 132px;
+    margin: 0 auto;
+}
+.social-login a{
+    display: inline-block;
+    border: solid 1px rgba(51,51,51,.6);
+    width:42px;
+    height: 42px;
+    
+}
+.fb-login{
+    float: left;
+    background: url(../images/facebook-grey.svg) 50% no-repeat;
+}
+.fb-login:hover{
+    background: url(../images/facebook-blue.svg) 50% no-repeat;
+}
+.in-login{
+    float: left;
+    background: url(../images/linkedin-grey.svg) 50% no-repeat;
+    margin-left: 44px;
+}
+.in-login:hover{
+    background: url(../images/linkedin-blue.svg) 50% no-repeat;
+}
+
+                                        /* Sign up */
+.signup {
+    display: block; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.7); 
+}
+.signup-image{
+    width: 519px;
+    height: 519px;
+    background: url(../images/ricardo-gomez-angel-397750.png);
+    background-size: cover;
+    display: inline-block;
+    margin-top: 60px;
+    position: relative;
+    z-index: 2;
+}
+.signup-image p{
+    height: 37px;
+    font-family: Playfair Display;
+    font-size: 28px;
+    letter-spacing: 1.1px;
+    text-align: center;
+    color: #fff;
+    margin-top: 240px;
+}
+
+.signup-content{
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 1105px;
+    position: relative;
+}
+.signup-image h3{
+    text-align: center;
+    height: 37px;
+    font-family: Playfair Display;
+    font-size: 28px;
+    font-weight: normal;
+    letter-spacing: 1.1px;
+    color: #ffffff;
+    margin-top: 44px;
+    margin-bottom: 135px;
+}
+.signup-image a{
+    display:block;
+    width: 512px;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0.55;
+    font-family: Playfair Display;
+    font-size: 24px;
+    letter-spacing: 0.9px;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+    text-decoration: none;
+    
+}
+.signup-image .as-muse{
+    margin-bottom: 25px;
+}
+.signup-image a.active{
+    opacity: 1;
+}
+.signup-image a.active::before,
+.signup-image a.active::after{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    border-width: 30px;
+}
+.signup-image a.active::before{
+    margin-left: -100%;
+}
+.signup-image a.active::after{
+    margin-right: -100%;
+}
+.signup-fields{
+    width: 640px;
+    height: 640px;
+    background-color: #fff;
+    position: absolute;
+    right:0;
+    top:0;
+    text-align: center;
+}
+.signup-fields h3{
+    height: 44px;
+    font-family: Playfair Display;
+    font-size: 33px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #1a1a1a;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+.signup-form{
+    width: 375px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+.signup-form input{
+    width: 100%;
+}
+.email-signup, .pass-signup, .confirm-pass-signup{
+    width: 276px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(51,51,51,.3);
+    margin-bottom: 36px;
+    padding: 4px 0;
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 500;
+    color: #333333;
+    
+}
+.pass-signup, .confirm-pass-signup{
+    margin-bottom: 34px;
+    
+}
+.button-signup{
+    height: 50px;
+    opacity: 0.6;
+    border: solid 1px rgba(51,51,51,.6);
+    font-family: Playfair Display;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    background-color: #fff;
+    margin-bottom: 44px;
+}
+.button-signup:hover,.button-signup:active{
+    cursor: pointer;
+    border: solid 1px #333;
+    opacity: 1;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+.signup-fields p{
+    opacity: 0.6;
+    font-family: Raleway;
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 42px;
+    margin-top: 0;
+}
+.signup-form p{
+    margin-bottom: 28px;
+    font-size: 13px;
+}
+.social-signup{
+    width: 132px;
+    margin: 0 auto;
+}
+.social-signup a{
+    display: inline-block;
+    border: solid 1px rgba(51,51,51,.6);
+    width:42px;
+    height: 42px;
+    
+}
+.fb-signup{
+    float: left;
+    background: url(../images/facebook-grey.svg) 50% no-repeat;
+}
+.fb-signup:hover{
+    background: url(../images/facebook-blue.svg) 50% no-repeat;
+}
+.in-signup{
+    float: left;
+    background: url(../images/linkedin-grey.svg) 50% no-repeat;
+    margin-left: 44px;
+}
+.in-signup:hover{
+    background: url(../images/linkedin-blue.svg) 50% no-repeat;
+}
+
+
+
+                                        /* Recovery */
+.recovery-fields{
+    width: 640px;
+    height: 640px;
+    background-color: #fff;
+    position: absolute;
+    right:0;
+    top:0;
+    text-align: center;
+}
+.recovery-fields h3{
+    height: 44px;
+    font-family: Playfair Display;
+    font-size: 33px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #1a1a1a;
+    margin-top: 60px;
+    margin-bottom: 35px;
+}
+.recovery-fields p{
+    width: 260px;
+    margin: 0 auto;
+    height: 42px;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    color: #4a4a4a;
+    margin-bottom: 80px;
+}
+.recovery-form{
+    width: 375px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+.recovery-form input{
+    width: 100%;
+}
+.email-recovery{
+    width: 276px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(51,51,51,.3);
+    margin-bottom: 36px;
+    padding: 4px 0;
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 500;
+    color: #333333;
+    
+}
+.button-recovery{
+    height: 50px;
+    opacity: 0.6;
+    border: solid 1px rgba(51,51,51,.6);
+    font-family: Playfair Display;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    background-color: #fff;
+    margin-bottom: 44px;
+}
+.button-recovery:hover,.button-recovery:active{
+    cursor: pointer;
+    border: solid 1px #333;
+    opacity: 1;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+
+
+                                                /* Following */
+
+
+
+.following-window{
+    width: 876px;
+    height: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top: 112px;
+}
+.close{
+    float: right;
+    font-size: 58px;
+    color: #1a1a1a;
+    line-height: 33px;
+    margin-top: 20px;
+    margin-right: 22px;
+}
+.close:hover{
+    cursor: pointer;
+}
+.follow-info h2{
+    padding-top:26px;
+    margin-left: 42px;
+    height: 40px;
+    font-family: Playfair Display;
+    font-size: 30px;
+    font-weight: normal;
+    color: #1a1a1a;
+}
+.follow-info h2 span{
+    height: 26px;
+    opacity: 0.5;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: left;
+    color: #1a1a1a;
+    margin-left: 26px;
+}
+.follow-search{
+    height: 83px;
+    width: 100%;
+    background-color: rgba(216,216,216,.1);
+}
+.follow-acc{
+    width: 803px;
+    height: 89px;
+    border-bottom: 1px solid rgba(26,26,26,.15);
+    margin-left: 42px;
+    margin-top: 20px;
+}
+.follow-icon img{
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+.follow-name{
+    float: left;
+    margin-left: 30px;
+}
+.follow-name h3{
+    margin-top: 0;
+    margin-bottom: 6px;
+    height: 24px;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+.follow-name p{
+    margin: 0;
+    height: 20px;
+    opacity: 0.7;
+    font-family: Raleway;
+    font-size: 17px;
+    color: #1a1a1a;
+}
+.follow-button{
+    float: right;
+    width: 84px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 21px;
+    border: solid 1px #1a1a1a;
+    color: #1a1a1a;
+}
+.follow-button p{
+    margin: 0;
+    font-family: Raleway;
+    font-size: 12px;
+}
+.follow-button.active{
+    background-color: #B2B2B2;
+    border-color: #B2B2B2;
+}
+.follow-button.active p{
+    content: "Unfollow";
+    color: #fff;
+}
+.follow-button:hover{
+    background-color: #B2B2B2;
+    color: #fff;
+    border-color: #b2b2b2;
+    cursor: pointer;
+}
+.follow-acc-container{
+    height: 626px;
+    overflow: auto;
+}
+.follow-acc-container::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+.follow-acc-container::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #fff;
+}
+
+.follow-acc-container::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #4a4a4a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Header */
 .more{
@@ -40,7 +599,6 @@
     display: inline-block;
     margin-left: 48px;
 }
-
 /* Hero */
 
 .hero{
@@ -293,7 +851,11 @@
     border: none;
     border-bottom: 1px solid rgba(51,51,51,.3);
     margin-bottom: 36px;
-    
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 500;
+    color: #333333;
+}
 }
 .button{
     border: solid 1px #333333;
@@ -312,26 +874,22 @@
 ::-webkit-input-placeholder {
     font-family: Raleway;
     font-size: 16px;
-    color: #c2c2c2;
-    color:rgba(51,51,51,.3);
+    color:rgba(51,51,51,.7);
 }
 ::-moz-placeholder{
-    color:rgba(51,51,51,.3);
+    color:rgba(51,51,51,.7);
     font-family: Raleway;
     font-size: 16px;
-    color: #c2c2c2;
 }
 :-moz-placeholder{
-    color:rgba(51,51,51,.3);
+    color:rgba(51,51,51,.7);
     font-family: Raleway;
     font-size: 16px;
-    color: #c2c2c2;
 }
 :-ms-input-placeholder{
-    color:rgba(51,51,51,.3);
+    color:rgba(51,51,51,.7);
     font-family: Raleway;
     font-size: 16px;
-    color: #c2c2c2;
 }
 
 /* Footer */
@@ -902,4 +1460,82 @@
     .links{
         margin-left: 5%;
     }
+}
+                                            /* Account */
+
+.navbar-login{
+    margin: 0;
+    float:right;
+    margin-right: 93px;  
+    list-style-type: none;
+    margin-top: -6px;
+}
+
+.search{
+    background: url(../images/loupe.svg) 50% no-repeat;  
+}
+.mail{
+    background: url(../images/email-2.svg) 50% no-repeat;
+}
+.bell{
+    background: url(../images/item-4.svg) 50% no-repeat;
+}
+.man{
+    background: url(../images/item-5.svg) 50% no-repeat;
+}
+.set{
+    background: url(../images/gear.svg) 50% no-repeat;
+    background-size: 65%;
+}
+.navbar-login li{
+    display: inline-block;
+    margin-top: 1px;
+    width: 40px;
+    height: 40px;
+    opacity: .4;
+}
+.navbar-login li:hover,
+.navbar-login li:active{
+    cursor: pointer;
+    background-color: rgba(255,255,255,.05);
+    opacity: 1;
+}
+.upload{
+    display:block;
+    position: absolute;
+    margin: 0 auto;
+    width: 164px;
+    height: 25px;
+    border: 1px solid #fff;
+    left: 0;
+    right: 0;
+    top: 17px;
+    font-family: Raleway;
+    font-size: 13px;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 13px;
+    text-decoration: none;
+    opacity: .6;
+    
+}
+.upload img{
+    margin-top: -5px;
+    margin-left: 20px;
+    width: 23px;
+    height: 23px;
+    float: left;
+}
+.profile-hero{
+    height: 300px;
+    background-image: url(../images/Profile-Image.jpg);
+    background-size: cover;
+}
+.overlay{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21,21,21,.75);
+    padding-left: 135px;
+    padding-top: 126px;
 }
