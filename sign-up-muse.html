@@ -24,7 +24,7 @@
 
 </head> 
 <body> 
-    <div id="signUp" class="signup">
+    <div id="signUpMuse" class="signup">
         <div class="signup-content">
             <div class="signup-image"> 
                 <h3>Welcome to MOD.</h3>
@@ -34,9 +34,18 @@
             <div class="signup-fields">
                 <h3>Sign up as a Muse</h3>
                 <form class="signup-form">
-                    <input type="email" placeholder="Email" value="" name="EMAIL" class="required email-signup">
-                    <input type="password" placeholder="Password" value="" name="PASSWORD" class="required pass-signup" >
-                    <input type="password" placeholder="Confirm password" value="" name="PASSWORD" class="required confirm-pass-signup">
+                    <div class="has-float-label">
+                        <input id="email-signup" type="email" placeholder="&nbsp;" value="" name="EMAIL" class="required email-signup">
+                        <label for="email-signup">Email</label>
+                    </div>
+                    <div class="has-float-label">
+                        <input id="pass-signup" type="password" placeholder="&nbsp;" value="" name="PASSWORD" class="required pass-signup" >
+                        <label for="pass-signup">Password</label>
+                    </div>
+                    <div class="has-float-label">
+                        <input id="pass-signup-2" type="password" placeholder="&nbsp;" value="" name="PASSWORD" class="required confirm-pass-signup">
+                        <label for="pass-signup-2">Confirm password</label>
+                    </div>
                     <p>I agree to the Terms and Privacy Policy by clicking «Sign up»</p>
                     <div class="clear">
                         <input type="submit" value="Sign up" name="subscribe" class="button-signup">

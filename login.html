@@ -32,8 +32,14 @@
             <div class="login-fields">
                 <h3>Login</h3>
                 <form class="login-form">
-                    <input type="email" placeholder="Email" value="" name="EMAIL" class="required email-login">
-                    <input type="password" placeholder="Password" value="" name="PASSWORD" class="required pass-login" >
+                    <div class="has-float-label">
+                        <input id="email" type="email" placeholder="&nbsp;" value="" name="EMAIL" class="required email-login">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="has-float-label">
+                        <input id="pass" type="password" placeholder="&nbsp;" value="" name="PASSWORD" class="required pass-login" >
+                        <label for="pass">Password</label>
+                    </div>
                     <a href="#" class="forgot">Forgot password?</a>
                     <div class="clear">
                         <input type="submit" value="Login" name="subscribe" class="button-login">
