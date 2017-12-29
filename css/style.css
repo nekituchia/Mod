@@ -1799,9 +1799,160 @@
     width: 100%;
     height: 100%;
     background-color: rgba(21,21,21,.75);
-    padding-left: 135px;
+    padding-left: 132px;
     padding-top: 126px;
 }
+.overlay h1{
+    height: 59px;
+    font-family: Playfair Display;
+    font-size: 44px;
+    font-weight: normal;
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 25px;
+    margin-left: 3px;
+}
+.stats a{
+    text-decoration: none;
+    color: #fff;
+    height: 24px;
+    font-family: Raleway;
+    font-size: 20px;
+    margin-right: 40px;
+}
+.stats a span{
+    font-weight: 600;
+    
+}
+.main-info{
+    width: 405px;
+    float: left;
+    margin-top: 15px;
+    border-right: 1px solid rgba(51,51,51,.2);
+    padding-bottom: 8px;
+}
+.about-me-profile{
+    float: left;
+    width: 740px;
+    margin-left: 60px;
+}
+.about-me-profile h2{
+    margin: 0;
+    margin-bottom: 25px;
+    font-family: Playfair Display;
+    font-size: 30px;
+    font-weight: bold;
+    color: #1a1a1a;
+    float:left;
+}
+.about-me-profile p{
+    float:left;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(51,51,51,.8);
+    margin: 0;
+}
+.about-me-profile a{
+    float:right;
+    margin-top: 8px;
+    font-family: Raleway;
+    font-size: 20px;
+    color: rgba(51,51,51,.7);
+    text-decoration: none;
+}
+.about-me-profile p span{
+    display:block;
+    margin-bottom: 18px;
+}
+.profile-info{
+    margin-left: 132px;
+    margin-bottom: 60px;
+}
+.skill-name{
+    float:left;
+    font-family: Raleway;
+    font-size: 20px;
+    color: rgba(51,51,51,.7);
+}
+.skill-name div, .skill-value div{
+    margin-bottom: 30px;
+}
+.skill-name div:last-child{
+    margin-bottom: 0;
+}
+.profile-body{
+    padding-top: 45px;
+}
+.skill-value{
+    float:left;
+    margin-left: 15px;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+.grid-2 { 
+    column-count: 4;
+    column-gap: 30px;
+    padding-left: 133px;
+    padding-right: 133px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            /* Other Muse */
+.grid-3 { 
+    column-count: 4;
+    column-gap: 30px;
+    padding-left: 133px;
+    padding-right: 133px;
+}
+.muse-btns{
+    float: right;
+    margin-right: 100px;
+}
+.muse-btns div{
+    display: inline-block;
+    width: 120px;
+    height: 34px;
+    color: #fff;
+    font-family: Raleway;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 8px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+}
+.muse-btns div:hover{
+    cursor: pointer;
+}
+.msg-btn{
+    margin-right: 25px;
+}
+.stats{
+    float:left;
+    margin-top: 8px;
+}
+.fol-btn.act{
+    background-color: #b2b2b2;
+    border: none;
+}
+.go-pro{
+    margin-bottom: 65px;
+}
+
 
 
 
