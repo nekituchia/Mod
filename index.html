@@ -28,10 +28,11 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="mobile-sign-up">
         <div class="signup-image"> 
+            <a id="close-button-white" class="close-button-white"></a>
             <h3>Welcome to MOD.</h3>
         </div>
         <div class="mobile-sign-up-fields">
-            <a class="close-button">x</a>
+            <a class="close-button"></a>
             <h2>Sign up</h2>
             <div class="signup-muse-btn">Sign up as a Muse</div>
             <div class="signup-emp-btn">Sign up as an Employer</div>
@@ -40,12 +41,13 @@
     <div id="signUpMuse" class="signup">
         <div class="signup-content">
             <div class="signup-image"> 
+                <a id="close-button-white" class="close-button-white"></a>
                 <h3>Welcome to MOD.</h3>
                 <a href="#" class="as-muse active">Sign up as a Muse</a>
                 <a href="#" class="as-employer">Sign up as an Employer</a>
             </div>
             <div class="signup-fields">
-                <a class="close-button">x</a>
+                <a class="close-button"></a>
                 <h3>Sign up as a Muse</h3>
                 <form class="signup-form">
                     <div class="has-float-label">
@@ -76,12 +78,13 @@
     <div id="signUpEmp" class="signup">
         <div class="signup-content">
             <div class="signup-image"> 
+                <a id="close-button-white" class="close-button-white"></a>
                 <h3>Welcome to MOD.</h3>
                 <a href="#" class="as-muse">Sign up as a Muse</a>
                 <a href="#" class="as-employer active">Sign up as an Employer</a>
             </div>
             <div class="signup-fields">
-                <a class="close-button">x</a>
+                <a class="close-button"></a>
                 <h3>Sign up as an Employer</h3>
                 <form class="signup-form">
                     <input type="email" placeholder="Email" value="" name="EMAIL" class="required email-signup">
@@ -103,10 +106,11 @@
     <div id="logIn" class="login">
             <div class="login-content">
                 <div class="login-image"> 
+                    <a id="close-button-white" class="close-button-white"></a>
                     <p>Welcome back to MOD.</p>
                 </div>
                 <div class="login-fields">
-                    <a class="close-button">x</a>
+                    <a class="close-button"></a>
                     <h3>Login</h3>
                     <form class="login-form">
                         <div class="has-float-label">
@@ -133,10 +137,11 @@
     <div id="recovery" class="login">
         <div class="login-content">
             <div class="login-image"> 
+                <a id="close-button-white" class="close-button-white"></a>
                 <p>Welcome back to MOD.</p>
             </div>
             <div class="recovery-fields">
-                <a class="close-button">x</a>
+                <a class="close-button"></a>
                 <h3>Password Recovery</h3>
                 <p>You will receive an email to reset your password.</p>
                 <form class="recovery-form">
@@ -281,17 +286,32 @@
                 $("#signUpEmp").css({display: "none"});
                 $("#signUpMuse").css({display: "none"});
 			});
+            $(".close-button-white").click(function(){
+				$("#logIn").removeClass("active");
+                $("#signUpMuse").removeClass("active");
+                $("#signUpEmp").removeClass("active");
+                $("#recovery").removeClass("active");
+                $(".mobile-sign-up").removeClass("active");
+                $("#signUpEmp").css({display: "none"});
+                $("#signUpMuse").css({display: "none"});
+			});
 			$(".sign-up-button").click(function(){
 				$("#signUpMuse").addClass("active");
                 $(".mobile-sign-up").addClass("active");
+                $("#signUpMuse").css({display: "block"});
+                
 			});
             $(".as-muse").click(function(){
 				$("#signUpMuse").addClass("active");
                 $("#signUpEmp").removeClass("active");
+                $("#signUpMuse").css({display: "block"});
+                $("#signUpEmp").css({display: "none"});
 			});
             $(".as-employer").click(function(){
 				$("#signUpMuse").removeClass("active");
                 $("#signUpEmp").addClass("active");
+                $("#signUpEmp").css({display: "block"});
+                $("#signUpMuse").css({display: "none"});
 			});
             $(".signup-muse-btn").click(function(){
 				$("#signUpMuse").css({display: "block"});
