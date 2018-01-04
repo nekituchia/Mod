@@ -276,6 +276,7 @@
 		$(document).ready(function(){
 			$(".login-button").click(function(){
 				$("#logIn").addClass("active");
+                $('body').css('overflow','hidden');
 			});
             $(".close-button").click(function(){
 				$("#logIn").removeClass("active");
@@ -285,6 +286,7 @@
                 $(".mobile-sign-up").removeClass("active");
                 $("#signUpEmp").css({display: "none"});
                 $("#signUpMuse").css({display: "none"});
+                $('body').css('overflow','auto');
 			});
             $(".close-button-white").click(function(){
 				$("#logIn").removeClass("active");
@@ -294,11 +296,13 @@
                 $(".mobile-sign-up").removeClass("active");
                 $("#signUpEmp").css({display: "none"});
                 $("#signUpMuse").css({display: "none"});
+                $('body').css('overflow','auto');
 			});
 			$(".sign-up-button").click(function(){
 				$("#signUpMuse").addClass("active");
                 $(".mobile-sign-up").addClass("active");
                 $("#signUpMuse").css({display: "block"});
+                $('body').css('overflow','hidden');
                 
 			});
             $(".as-muse").click(function(){
@@ -306,24 +310,29 @@
                 $("#signUpEmp").removeClass("active");
                 $("#signUpMuse").css({display: "block"});
                 $("#signUpEmp").css({display: "none"});
+                $('body').css('overflow','hidden');
 			});
             $(".as-employer").click(function(){
 				$("#signUpMuse").removeClass("active");
                 $("#signUpEmp").addClass("active");
                 $("#signUpEmp").css({display: "block"});
                 $("#signUpMuse").css({display: "none"});
+                $('body').css('overflow','hidden');
 			});
             $(".signup-muse-btn").click(function(){
 				$("#signUpMuse").css({display: "block"});
                 $(".mobile-sign-up").removeClass("active");
+                $('body').css('overflow','hidden')
 			});
             $(".signup-emp-btn").click(function(){
 				$("#signUpEmp").css({display: "block"});
                 $(".mobile-sign-up").removeClass("active");
+                $('body').css('overflow','hidden');
 			});
             $(".forgot").click(function(){
 				$("#logIn").removeClass("active");
                 $("#recovery").addClass("active");
+                $('body').css('overflow','hidden');
 			});
 		});
 	</script>
