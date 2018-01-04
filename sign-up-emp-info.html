@@ -152,6 +152,7 @@ $(document).ready(function(){
 
 				selectItem.on('click', function(){
 					var chooseItem = $(this).data('value');
+                    
 
 					$('select').val(chooseItem).attr('selected', 'selected');
 					selectGap.text($(this).find('span').text());
