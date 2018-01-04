@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="163px" height="18px" viewBox="0 0 163 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>9DB9F3E2-67F0-48B6-894E-5BDB15F68ED9</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Search_open-fillters" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1139.000000, -129.000000)">
+        <g id="add-filters" transform="translate(1137.000000, 126.000000)">
+            <g id="cancel-(1)" transform="translate(147.000000, 3.000000)" fill="#000000" fill-rule="nonzero">
+                <path d="M17.85374,17.1468886 L0.85328979,0.146255713 C0.658284268,-0.0487519044 0.341259665,-0.0487519044 0.146254142,0.146255713 C-0.0487513807,0.341263331 -0.0487513807,0.65829134 0.146254142,0.853298957 L17.1467512,17.8539787 C17.2447696,17.9509668 17.372742,18 17.5007613,18 C17.6287805,18 17.7567529,17.9510137 17.8537869,17.8539787 C18.0487455,17.6589242 18.0487455,17.3418962 17.85374,17.1468886 Z" id="Shape"></path>
+                <path d="M17.8537458,0.146256094 C17.6587402,-0.0487520313 17.3417155,-0.0487520313 17.1467099,0.146256094 L0.14625419,17.1469332 C-0.0487513965,17.3419413 -0.0487513965,17.6589702 0.14625419,17.8539783 C0.244272622,17.9509667 0.372245038,18 0.50026433,18 C0.628283623,18 0.756256039,17.9510136 0.853290068,17.8539783 L17.8537458,0.853254302 C18.0487514,0.658246177 18.0487514,0.341264219 17.8537458,0.146256094 Z" id="Shape"></path>
+            </g>
+            <text id="Remove-filters" font-family="Raleway-Regular, Raleway" font-size="20" font-weight="normal" fill="#1A1A1A">
+                <tspan x="0.7" y="19">Remove filters</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

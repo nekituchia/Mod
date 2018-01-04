@@ -24,33 +24,151 @@
 
 </head>
 <body> 
+    <!-- Modals
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="mobile-sign-up">
+        <div class="signup-image"> 
+            <h3>Welcome to MOD.</h3>
+        </div>
+        <h2>Sign up</h2>
+        <div class="signup-muse-btn">Sign up as a Muse</div>
+        <div class="signup-emp-btn">Sign up as an Employer</div>
+    </div>
+    <div id="signUpMuse" class="signup">
+        <div class="signup-content">
+            <div class="signup-image"> 
+                <h3>Welcome to MOD.</h3>
+                <a href="#" class="as-muse active">Sign up as a Muse</a>
+                <a href="#" class="as-employer">Sign up as an Employer</a>
+            </div>
+            <div class="signup-fields">
+                <h3>Sign up as a Muse</h3>
+                <form class="signup-form">
+                    <div class="has-float-label">
+                        <input id="email-signup" type="email" placeholder="&nbsp;" value="" name="EMAIL" class="required email-signup">
+                        <label for="email-signup">Email</label>
+                    </div>
+                    <div class="has-float-label">
+                        <input id="pass-signup" type="password" placeholder="&nbsp;" value="" name="PASSWORD" class="required pass-signup" >
+                        <label for="pass-signup">Password</label>
+                    </div>
+                    <div class="has-float-label">
+                        <input id="pass-signup-2" type="password" placeholder="&nbsp;" value="" name="PASSWORD" class="required confirm-pass-signup">
+                        <label for="pass-signup-2">Confirm password</label>
+                    </div>
+                    <p>I agree to the <a href="#">Terms and Privacy Policy</a> by clicking «Sign up»</p>
+                    <div class="clear">
+                        <input type="submit" value="Sign up" name="subscribe" class="button-signup">
+                    </div>
+                </form>
+                <p>or sign up with</p>
+                <div class="social-signup">
+                    <a href="#" class="fb-signup"></a>
+                    <a href="#" class="in-signup"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="signUpEmp" class="signup">
+        <div class="signup-content">
+            <div class="signup-image"> 
+                <h3>Welcome to MOD.</h3>
+                <a href="#" class="as-muse">Sign up as a Muse</a>
+                <a href="#" class="as-employer active">Sign up as an Employer</a>
+            </div>
+            <div class="signup-fields">
+                <h3>Sign up as an Employer</h3>
+                <form class="signup-form">
+                    <input type="email" placeholder="Email" value="" name="EMAIL" class="required email-signup">
+                    <input type="password" placeholder="Password" value="" name="PASSWORD" class="required pass-signup" >
+                    <input type="password" placeholder="Confirm password" value="" name="PASSWORD" class="required confirm-pass-signup">
+                    <p>I agree to the <a href="#">Terms and Privacy Policy</a> by clicking «Sign up»</p>
+                    <div class="clear">
+                        <input type="submit" value="Sign up" name="subscribe" class="button-signup">
+                    </div>
+                </form>
+                <p>or sign up with</p>
+                <div class="social-signup">
+                    <a href="#" class="fb-signup"></a>
+                    <a href="#" class="in-signup"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="logIn" class="login">
+            <div class="login-content">
+                <div class="login-image"> 
+                    <p>Welcome back to MOD.</p>
+                </div>
+                <div class="login-fields">
+                    <h3>Login</h3>
+                    <form class="login-form">
+                        <div class="has-float-label">
+                            <input id="email" type="email" placeholder="&nbsp;" value="" name="EMAIL" class="required email-login">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="has-float-label">
+                            <input id="pass" type="password" placeholder="&nbsp;" value="" name="PASSWORD" class="required pass-login" >
+                            <label for="pass">Password</label>
+                        </div>
+                        <a href="#" class="forgot">Forgot password?</a>
+                        <div class="clear">
+                            <input type="submit" value="Login" name="subscribe" class="button-login">
+                        </div>
+                    </form>
+                    <p>or login with</p>
+                    <div class="social-login">
+                        <a href="#" class="fb-login"></a>
+                        <a href="#" class="in-login"></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div id="recovery" class="login">
+        <div class="login-content">
+            <div class="login-image"> 
+                <p>Welcome back to MOD.</p>
+            </div>
+            <div class="recovery-fields">
+                <h3>Password Recovery</h3>
+                <p>You will receive an email to reset your password.</p>
+                <form class="recovery-form">
+                    <input type="email" placeholder="Email" value="" name="EMAIL" class="required email-recovery">
+                    <div class="clear">
+                        <input type="submit" value="Send email" name="subscribe" class="button-recovery">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <!-- Header
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <section class="header">
         <a class="logo" href="index.html"><img src="images/mod.svg"></a>
         <ul class="navbar">
-            <li><a href="#">Sign up</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="#" class="sign-up-button">Sign up</a></li>
+            <li><a href="#" class="login-button">Login</a></li>
         </ul>
     </section>
     <!-- Hero image
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->   
     <section class="hero">
         <div class="hero-text"> 
-            <p>Create an anonymous portfolio. Get discovered.<br> Be hired.</p>
+            <p>Create an anonymous portfolio. Get discovered.</p>
         </div>
     </section>
     <!-- How it Works
   –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
     <section class="works">
         <div class="how">
-            <p>How it works</p>
+            <h2>How it works</h2>
             <img src="images/black.svg">
+            <p>Inspire or be inspired, hire or be hired, buy or sell from creatives that are now at your fingertips.</p>
         </div>
         <div class="bias">
             <div class="left feature">
                 <h2>No Bias</h2>
-                <p>Judgement limits creative innovation and progress. MOD provides an anonymous platform where appreciation for your creativity is not limited by gender, age, race, or ethnicity.</p>
+                <p>Judgement limits creative innovation and progress. MOD provides an anonymous platform where appreciation for your creativity is not limited by gender, age, race, ethnicity, or level of experience.</p>
             </div>
         </div>
         <div class="share">
@@ -71,9 +189,8 @@
                 <p>The world is your canvas, and so is MOD! Socialize, discover, collaborate, work, create, repeat.</p>
             </div>
         </div>
-        <div class="how-it">
-            <h2>How it works</h2>      
-            <p>Inspire or be inspired, hire or be hired, buy or sell from creatives that are now at your fingertips.</p>
+        <div class="how-it">     
+            <p>Check out some of our Muses’ latest work</p>
             <div class="shadow top"></div>
             <div class="grid">
                 <div class="grid-item"><img align="middle" src="images/1-1.jpg"></div>
@@ -98,9 +215,7 @@
                 <h2>Join our newsletter</h2>
                 <form class="subscribe-form">
                     <input type="email" value="" name="EMAIL" class="required email" placeholder="Enter your email">
-                    <div class="clear">
-                        <input type="submit" value="Subscribe" name="subscribe" class="button">
-                    </div>
+                    <input type="submit" value="Subscribe" name="subscribe" class="button">
                 </form>
             </div>
             <div class="app">
@@ -143,10 +258,38 @@
             <a href="#">Legal</a>
         </div>
     </section>
-    <script
-  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-  crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script>
+		$(document).ready(function(){
+			$(".login-button").click(function(){
+				$("#logIn").addClass("active");
+			});
+			$(".sign-up-button").click(function(){
+				$("#signUpMuse").addClass("active");
+                $(".mobile-sign-up").addClass("active");
+			});
+            $(".as-muse").click(function(){
+				$("#signUpMuse").addClass("active");
+                $("#signUpEmp").removeClass("active");
+			});
+            $(".as-employer").click(function(){
+				$("#signUpMuse").removeClass("active");
+                $("#signUpEmp").addClass("active");
+			});
+            $(".signup-muse-btn").click(function(){
+				$("#signUpMuse").css({display: "block"});
+                $(".mobile-sign-up").removeClass("active");
+			});
+            $(".signup-emp-btn").click(function(){
+				$("#signUpEmp").css({display: "block"});
+                $(".mobile-sign-up").removeClass("active");
+			});
+            $(".forgot").click(function(){
+				$("#logIn").removeClass("active");
+                $("#recovery").addClass("active");
+			});
+		});
+	</script>
 </body>
 </html>
