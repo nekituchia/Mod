@@ -567,9 +567,12 @@
 }
 #recovery{
     display: none;
+    position: fixed;
+    height: 100%;
 }
 #recovery.active{
     display: block;
+    
 }
                                         /* Mobile */
 
