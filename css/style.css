@@ -202,12 +202,11 @@
 }
 #logIn{
     display: none;
-
+    position: fixed;
 
 }
 #logIn.active{
     display:block;
-
     position: fixed;
     height: 100%;
 
