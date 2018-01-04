@@ -265,7 +265,7 @@ $(document).ready(function(){
 
 				selectItem.on('click', function(){
 					var chooseItem = $(this).data('value');
-
+                    $('.select .select__gap').addClass("active");
 					$('select').val(chooseItem).attr('selected', 'selected');
 					selectGap.text($(this).find('span').text());
 
@@ -327,8 +327,8 @@ $(document).ready(function(){
 
 				selectItem.on('click', function(){
 					var chooseItem = $(this).data('value');
-
-					$('select-1').val(chooseItem).attr('selected', 'selected');
+                    $('.select-2 .select__gap').addClass("active");
+					$('select').val(chooseItem).attr('selected', 'selected');
 					selectGap.text($(this).find('span').text());
 
 					selectList.slideUp(dur);
@@ -388,11 +388,11 @@ $(document).ready(function(){
 				selectList.slideDown(dur);
 
 				selectItem.on('click', function(){
+                    $('.select-2 .select__gap').addClass("active");
 					var chooseItem = $(this).data('value');
-
-					$('select-2').val(chooseItem).attr('selected', 'selected');
+					$('select').val(chooseItem).attr('selected', 'selected');
 					selectGap.text($(this).find('span').text());
-
+                    
 					selectList.slideUp(dur);
 					selectGap.removeClass('on');
 				});

@@ -30,9 +30,12 @@
         <div class="signup-image"> 
             <h3>Welcome to MOD.</h3>
         </div>
-        <h2>Sign up</h2>
-        <div class="signup-muse-btn">Sign up as a Muse</div>
-        <div class="signup-emp-btn">Sign up as an Employer</div>
+        <div class="mobile-sign-up-fields">
+            <a class="close-button">x</a>
+            <h2>Sign up</h2>
+            <div class="signup-muse-btn">Sign up as a Muse</div>
+            <div class="signup-emp-btn">Sign up as an Employer</div>
+        </div>
     </div>
     <div id="signUpMuse" class="signup">
         <div class="signup-content">
@@ -42,6 +45,7 @@
                 <a href="#" class="as-employer">Sign up as an Employer</a>
             </div>
             <div class="signup-fields">
+                <a class="close-button">x</a>
                 <h3>Sign up as a Muse</h3>
                 <form class="signup-form">
                     <div class="has-float-label">
@@ -77,6 +81,7 @@
                 <a href="#" class="as-employer active">Sign up as an Employer</a>
             </div>
             <div class="signup-fields">
+                <a class="close-button">x</a>
                 <h3>Sign up as an Employer</h3>
                 <form class="signup-form">
                     <input type="email" placeholder="Email" value="" name="EMAIL" class="required email-signup">
@@ -101,6 +106,7 @@
                     <p>Welcome back to MOD.</p>
                 </div>
                 <div class="login-fields">
+                    <a class="close-button">x</a>
                     <h3>Login</h3>
                     <form class="login-form">
                         <div class="has-float-label">
@@ -130,6 +136,7 @@
                 <p>Welcome back to MOD.</p>
             </div>
             <div class="recovery-fields">
+                <a class="close-button">x</a>
                 <h3>Password Recovery</h3>
                 <p>You will receive an email to reset your password.</p>
                 <form class="recovery-form">
@@ -264,6 +271,15 @@
 		$(document).ready(function(){
 			$(".login-button").click(function(){
 				$("#logIn").addClass("active");
+			});
+            $(".close-button").click(function(){
+				$("#logIn").removeClass("active");
+                $("#signUpMuse").removeClass("active");
+                $("#signUpEmp").removeClass("active");
+                $("#recovery").removeClass("active");
+                $(".mobile-sign-up").removeClass("active");
+                $("#signUpEmp").css({display: "none"});
+                $("#signUpMuse").css({display: "none"});
 			});
 			$(".sign-up-button").click(function(){
 				$("#signUpMuse").addClass("active");

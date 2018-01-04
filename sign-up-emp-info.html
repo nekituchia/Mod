@@ -95,7 +95,6 @@
                                 <option>Other</option>
                             </select>
                             <p class="Required-r">Required</p>
-                            <p class="Required-r">Required</p>
                         </div>
                     </div>    
                     <button type="submit" class="next">Next </button>
@@ -149,14 +148,14 @@ $(document).ready(function(){
 			if(!$(this).hasClass('on')){
 				$(this).addClass('on');
 				selectList.slideDown(dur);
-
+                
 				selectItem.on('click', function(){
 					var chooseItem = $(this).data('value');
                     
 
 					$('select').val(chooseItem).attr('selected', 'selected');
 					selectGap.text($(this).find('span').text());
-
+                    $('.select .select__gap').addClass('active');
 					selectList.slideUp(dur);
 					selectGap.removeClass('on');
 				});
