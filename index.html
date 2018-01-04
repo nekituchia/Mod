@@ -275,63 +275,62 @@
     <script>
 		$(document).ready(function(){
 			$(".login-button").click(function(){
-				$("#logIn").addClass("active");
+				$("#logIn").fadeIn('slow');
                 $('body').css('overflow','hidden');
 			});
             $(".close-button").click(function(){
-				$("#logIn").removeClass("active");
-                $("#signUpMuse").removeClass("active");
-                $("#signUpEmp").removeClass("active");
-                $("#recovery").removeClass("active");
-                $(".mobile-sign-up").removeClass("active");
-                $("#signUpEmp").css({display: "none"});
-                $("#signUpMuse").css({display: "none"});
+				$("#logIn").fadeOut(500);
+                $("#signUpMuse").fadeOut(500);
+                $("#signUpEmp").fadeOut(500);
+                $("#recovery").fadeOut(500);
+                $(".mobile-sign-up").fadeOut(500);
+                $("#signUpEmp").fadeOut(500);
+                $("#signUpMuse").fadeOut(500);
                 $('body').css('overflow','auto');
 			});
             $(".close-button-white").click(function(){
-				$("#logIn").removeClass("active");
-                $("#signUpMuse").removeClass("active");
-                $("#signUpEmp").removeClass("active");
-                $("#recovery").removeClass("active");
-                $(".mobile-sign-up").removeClass("active");
-                $("#signUpEmp").css({display: "none"});
-                $("#signUpMuse").css({display: "none"});
+				$("#logIn").fadeOut(500);
+                $("#signUpMuse").fadeOut(500);
+                $("#signUpEmp").fadeOut(500);
+                $("#recovery").fadeOut(500);
+                $(".mobile-sign-up").fadeOut(500);
+                $("#signUpEmp").fadeOut(500);
+                $("#signUpMuse").fadeOut(500);
                 $('body').css('overflow','auto');
 			});
 			$(".sign-up-button").click(function(){
-				$("#signUpMuse").addClass("active");
-                $(".mobile-sign-up").addClass("active");
-                $("#signUpMuse").css({display: "block"});
+				$("#signUpMuse").fadeIn('slow');
+                $(".mobile-sign-up").addClass('active');
+                $("#signUpMuse").fadeIn('slow');
                 $('body').css('overflow','hidden');
                 
 			});
             $(".as-muse").click(function(){
-				$("#signUpMuse").addClass("active");
-                $("#signUpEmp").removeClass("active");
-                $("#signUpMuse").css({display: "block"});
-                $("#signUpEmp").css({display: "none"});
+				$("#signUpMuse").fadeIn('slow');
+                $("#signUpEmp").fadeOut(500);
+                $("#signUpEmp").fadeOut(500);
                 $('body').css('overflow','hidden');
 			});
             $(".as-employer").click(function(){
 				$("#signUpMuse").removeClass("active");
-                $("#signUpEmp").addClass("active");
-                $("#signUpEmp").css({display: "block"});
-                $("#signUpMuse").css({display: "none"});
+                $("#signUpEmp").fadeIn('slow');
+                $("#signUpEmp").fadeIn('slow');
+                $("#signUpMuse").fadeOut(500);
                 $('body').css('overflow','hidden');
 			});
             $(".signup-muse-btn").click(function(){
-				$("#signUpMuse").css({display: "block"});
-                $(".mobile-sign-up").removeClass("active");
+				$("#signUpMuse").fadeIn('slow');
+                $(".mobile-sign-up").fadeOut(500);
                 $('body').css('overflow','hidden')
 			});
             $(".signup-emp-btn").click(function(){
-				$("#signUpEmp").css({display: "block"});
-                $(".mobile-sign-up").removeClass("active");
+				$("#signUpEmp").fadeOut(500);
+                $(".mobile-sign-up").fadeOut(500);
                 $('body').css('overflow','hidden');
 			});
             $(".forgot").click(function(){
-				$("#logIn").removeClass("active");
-                $("#recovery").addClass("active");
+				$("#logIn").fadeOut(500);
+                $("#recovery").fadeIn('slow');
                 $('body').css('overflow','hidden');
 			});
 		});

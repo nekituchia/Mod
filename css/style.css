@@ -64,6 +64,9 @@
     position: relative;
     padding-top: 30px;
 }
+.mobile-sign-up.active{
+    display: none;
+}
 .mobile-sign-up .mobile-sign-up-fields h2{
     margin-top: 0;
 }
@@ -142,6 +145,7 @@
 .forgot:hover{
     opacity: 1;
 }
+
 .login-fields p{
     opacity: 0.6;
     font-family: Raleway;
@@ -178,23 +182,35 @@
 }
 #signUpMuse{
     display: none;
+
+
 }
 #signUpMuse.active{
     display:block;
+
+
 }
 #signUpEmp{
     display: none;
+
+
 }
 #signUpEmp.active{
     display:block;
+
+
 }
 #logIn{
     display: none;
+
+
 }
 #logIn.active{
     display:block;
+
     position: fixed;
     height: 100%;
+
 }
                                         /* Mobile */
 /* Mobile */
@@ -683,9 +699,9 @@
         height: 100%;
     }
     .mobile-sign-up.active{
-        display: block;
         width: 100%;
         z-index: 10;
+        display: block;
     }
     .mobile-sign-up h2{
         margin-top: 30px;
