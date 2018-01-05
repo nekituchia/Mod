@@ -1,4 +1,22 @@
-                                        /* Modals */
+@media (max-width: 1300px){
+    .images-discover .grid-1{
+        column-count: 3;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
+    }
+    .grid-item{
+        text-align: left;
+    }
+    .logo{
+        margin-left: 80px;
+    }
+}
+.navbar-login-mobile{
+    display: none;
+}
+
+/* Modals */
                                         /* Login */
 .mobile-sign-up{
     display: none;
@@ -1008,9 +1026,9 @@
     display: none;
 }
 .header {
-    height: 51px;
     background-color: #1a1a1a;
     padding-top: 24px;
+    padding-bottom: 24px;
 }
 .logo {
     display: inline-block;
@@ -1475,13 +1493,13 @@
 @media (max-width: 767px){
     .header{
         padding-top: 14px;
-        height: 36px;
+        padding-bottom: 12px;
     }
     .header img{
         height: 22px;
     }
     .logo{
-        margin-left: 10px;
+        margin-left: 16px;
     }
     .navbar{
         font-size: 14px;
@@ -1969,20 +1987,30 @@
     background: url(../images/gear1.svg) 50% no-repeat;
     background-size: 65%;
 }
-.search:hover{
-    background: url(../images/loupe11.svg) 50% no-repeat;  
+.search:hover,.search.active{
+    background: url(../images/loupe11.svg) 50% no-repeat; 
+    background-color: rgba(255,255,255,.05);
+    opacity: 1;
 }
-.mail:hover{
+.mail:hover, .mail.active{
     background: url(../images/email-2.svg) 50% no-repeat;
+    background-color: rgba(255,255,255,.05);
+    opacity: 1;
 }
-.bell:hover{
+.bell:hover, .bell.active{
     background: url(../images/item-4.svg) 50% no-repeat;
+    background-color: rgba(255,255,255,.05);
+    opacity: 1;
 }
-.man:hover{
+.man:hover, .man.active{
     background: url(../images/item-5.svg) 50% no-repeat;
+    background-color: rgba(255,255,255,.05);
+    opacity: 1;
 }
-.set:hover{
+.set:hover, .set.active{
     background: url(../images/gear.svg) 50% no-repeat;
+    background-color: rgba(255,255,255,.05);
+    opacity: 1;
     background-size: 65%;
 }
 .navbar-login li{
@@ -2001,6 +2029,7 @@
     display:block;
     position: absolute;
     margin: 0 auto;
+    margin-right: 46%;
     width: 164px;
     height: 25px;
     border: 1px solid #fff;
@@ -3024,6 +3053,7 @@ input.form-style-muse{
 }
 .grid-item .overlay-1 .text-bottom img{
     width: 28px;
+    height: 28px;
 }
 @media(min-width: 1441px){
     .grid-1{
@@ -3040,6 +3070,7 @@ input.form-style-muse{
     padding-top: 35px;
     box-sizing: border-box;
     padding-bottom: 37px;
+    display: none;
 }
 .block-search{
     float: left;
@@ -3110,6 +3141,7 @@ margin-top: 2px;
     float:left;
     margin-top: 50px;
     width: 100%;
+    display: none;
 }
 .first-row{
     width: 100%;
@@ -4106,5 +4138,76 @@ margin-top: 2px;
         width: 288px;
         font-size: 15px;
         height: 200px;
+    }
+}
+.hamburger{
+    display: none;
+}
+@media (max-width: 767px){
+    .images-discover .grid-1{
+        column-count: 2;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .grid-1 .grid-item{
+        width: 100%;
+        height: auto;
+    }
+    .grid-1 .grid-item:nth-child(n+3){
+        display:block;
+    }
+    .grid-1 .grid-item img{
+        height: auto;
+    }
+    .grid-1 .grid-item:hover .overlay-1{
+        display: none;
+    }
+    .grid-1 .grid-item:hover{
+        cursor: pointer;
+    }
+    .navbar-login{
+        display: none;
+    }
+    .upload{
+        display: none;
+    }
+    .navbar-login-mobile{
+        position: absolute;
+        width: 100%;
+        list-style: none;
+        background-color: #1a1a1a;
+        height: 100%;
+        z-index: 2;
+        margin-top: 12px;
+        overflow: hidden;
+        line-height: 48px;
+        font-family: Raleway;
+        font-size: 16px;
+        color: rgba(255,255,255,.8);
+        box-sizing: border-box;
+        padding-left: 25px;
+    }
+    .navbar-login-mobile li:hover{
+        cursor: pointer;
+    }
+    .navbar-login-mobile img{
+        margin-right: 30px;
+    }
+    .hamburger{
+        display:block;
+        float:right;
+        margin-right: 16px;
+        width: 25px;
+        height: 25px;
+        background: url(../images/burger1.svg) 50% no-repeat;
+    }
+    .hamburger.active{
+        background: url(../images/burger.svg) 50% no-repeat;
+    }
+    .hamburger:hover{
+        cursor: pointer;
+    }
+    body.active{
+        overflow:hidden;
     }
 }

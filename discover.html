@@ -36,6 +36,15 @@
             <li class="man"></li>
             <li class="set"></li>
         </ul>
+        <div class="hamburger"></div>
+        <ul class="navbar-login-mobile">
+            <li class="upload-mobile"><img src="images/upload.svg" width="24px">Upload project</li>
+            <li class="search-mobile"><img src="images/loupe11.svg" width="24px">Search</li>
+            <li class="mail-mobile"><img src="images/email-2.svg" width="24px">Networking</li>
+            <li class="bell-mobile"><img src="images/item-4.svg" width="24px">Notifications</li>
+            <li class="man-mobile"><img src="images/item-5.svg" width="24px">Profile</li>
+            <li class="set-mobile"><img src="images/gear.svg" width="24px">Settings</li>
+        </ul>
     </section>
     <section class="search-block clearfix">
         <div class="block-search">
@@ -335,7 +344,6 @@
                     <div class="text-bottom"><img src="./images/clap.svg"> 114 Applauds</div>
 				</div>
             </div>
-            <div class="more">Show more</div>
         </div>
         <h2>See more</h2>
     </section>
@@ -445,6 +453,20 @@
 		});		
 
 	});
+			$(".search").click(function(){
+				$(".search-block").slideToggle('slow');
+                $('.search').toggleClass('active');
+			});
+            $(".add-search-filters").click(function(){
+				$(".search-filters").slideToggle('slow');
+                $('.add-search-filters').toggleClass('active');
+			});
+            $(".hamburger").click(function(){
+				$(".navbar-login-mobile").slideToggle('slow');
+                $('.hamburger').toggleClass('active');
+                $('body').toggleClass('active');
+			});
+		
     });
     </script>
 </body>
