@@ -4220,3 +4220,8 @@ margin-top: 2px;
         overflow:hidden;
     }
 }
+@media (max-width: 450px){
+    .images-discover .grid-1{
+        column-count: 1;
+    }
+}
