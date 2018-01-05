@@ -4093,3 +4093,18 @@ margin-top: 2px;
     background: #1a1a1a;
     color: #fff;
 }
+@media (max-width: 767px){
+    .easy-autocomplete input{
+        width: 100%;
+    }
+    .select__gap{
+        width: 288px;
+        font-size: 15px;
+        font-weight: 300;        
+    }
+    .select__list{
+        width: 288px;
+        font-size: 15px;
+        height: 200px;
+    }
+}
