@@ -4148,10 +4148,12 @@ margin-top: 2px;
         column-count: 2;
         max-width: 90%;
         margin: 0 auto;
+        column-gap: 15px;
     }
     .grid-1 .grid-item{
         width: 100%;
         height: auto;
+        margin-bottom: 15px;
     }
     .grid-1 .grid-item:nth-child(n+3){
         display:block;
@@ -4160,7 +4162,14 @@ margin-top: 2px;
         height: auto;
     }
     .grid-1 .grid-item:hover .overlay-1{
-        display: none;
+        font-size: 14px;
+    }
+    .text-bottom{
+        font-size: 13px;
+    }
+    .grid-item .overlay-1 .text-bottom img{
+        width: 20px;
+        height: 20px;
     }
     .grid-1 .grid-item:hover{
         cursor: pointer;
