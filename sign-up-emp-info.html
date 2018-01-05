@@ -12,8 +12,9 @@
   
     <!-- Fonts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+    <link href="EasyAutocomplete/easy-autocomplete.min.css" rel="stylesheet">
     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
@@ -59,41 +60,7 @@
                     <div class="select-option second">
                         <div class="form-group">
                             <label class="lables">Your location</label>
-                            <select class="form-control form-style-muse select">
-                                <option>Advertising</option>
-                                <option>Architecture</option>
-                                <option>Branding</option>
-                                <option>Ceramics</option>
-                                <option>Crafting</option>
-                                <option>Drawing</option>
-                                <option>Fashion</option>
-                                <option>Film</option>
-                                <option>Fine Art</option>
-                                <option>Food/Cooking</option>
-                                <option>Design</option>
-                                <option>Gaming/Toy</option>
-                                <option>Graphic Design</option>
-                                <option>Interior Design</option>
-                                <option>Make-up</option>
-                                <option>Media</option>
-                                <option>Digital Media</option>
-                                <option>Marketing</option>
-                                <option>Music</option>
-                                <option>Painting</option>
-                                <option>Photography</option>
-                                <option>Production/Post-production</option>
-                                <option>Publishing</option>
-                                <option>Radio</option>
-                                <option>Retail</option>
-                                <option>Screenwriting</option>
-                                <option>Sculpture</option>
-                                <option>Styling</option>
-                                <option>Television</option>
-                                <option>Video</option>
-                                <option>Web Development</option>
-                                <option>Written Word</option>
-                                <option>Other</option>
-                            </select>
+                            <input id="location-search" class="location form-style-muse" placeholder="Select location"/>
                             <p class="Required-r">Required</p>
                         </div>
                     </div>    
@@ -101,72 +68,32 @@
             </form>
         </div>
     </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script
+  src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
+></script>
+    <script
+  src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+></script>
+    <script src="EasyAutocomplete/jquery.easy-autocomplete.min.js"></script>
     <script>
+        
 $(document).ready(function(){
-	$('.select').each(function(){
-		// Variables
-		var $this = $(this),
-			selectOption = $this.find('option'),
-			selectOptionLength = selectOption.length,
-			selectedOption = selectOption.filter(':selected'),
-			dur = 500;
+	        var options = {
 
-		$this.hide();
-		// Wrap all in select box
-		$this.wrap('<div class="select"></div>');
-		// Style box
-		$('<div>',{
-			class: 'select__gap',
-			text: 'Select location'
-		}).insertAfter($this);
-		
-		var selectGap = $this.next('.select__gap'),
-			caret = selectGap.find('.caret');
-		// Add ul list
-		$('<ul>',{
-			class: 'select__list'
-		}).insertAfter(selectGap);		
+  url: "EasyAutocomplete/countries.json",
 
-		var selectList = selectGap.next('.select__list');
-		// Add li - option items
-		for(var i = 0; i < selectOptionLength; i++){
-			$('<li>',{
-				class: 'select__item',
-				html: $('<span>',{
-					text: selectOption.eq(i).text()
-				})				
-			})
-			.attr('data-value', selectOption.eq(i).val())
-			.appendTo(selectList);
-		}
-		// Find all items
-		var selectItem = selectList.find('li');
+  getValue: "name",
 
-		selectList.slideUp(0);
-		selectGap.on('click', function(){
-			if(!$(this).hasClass('on')){
-				$(this).addClass('on');
-				selectList.slideDown(dur);
-                
-				selectItem.on('click', function(){
-					var chooseItem = $(this).data('value');
-                    
+  list: {	
+    match: {
+      enabled: true
+    }
+  },
 
-					$('select').val(chooseItem).attr('selected', 'selected');
-					selectGap.text($(this).find('span').text());
-                    $('.select .select__gap').addClass('active');
-					selectList.slideUp(dur);
-					selectGap.removeClass('on');
-				});
-				
-			} else {
-				$(this).removeClass('on');
-				selectList.slideUp(dur);
-			}
-		});		
+  theme: "square"
+};
 
-	});
+$("#location-search").easyAutocomplete(options);
 });
 </script>
 </body>
