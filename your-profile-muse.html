@@ -24,6 +24,86 @@
 
 </head>
 <body> 
+    <div id="following" class="login">
+        <div class="following-window">
+            <div class="follow-info">
+                <span class="close">&times;</span>
+                <h2>Following<span>27 muses</span></h2>
+            </div>
+            <div class="follow-search">
+                <form action="" method="post" id="search">
+                  <input type="text" name="" placeholder="Search" class="input" />
+                  <input type="submit" name="" value="" class="submit" />
+                </form>
+            </div>
+            <div class="follow-acc-container">
+                <div class="follow-acc">
+                    <div class="follow-icon"><img src="images/woman.jpg"></div>
+                    <div class="follow-name">
+                        <h3>Kate Stevenson</h3>
+                        <p>Fashion / Visual Merchandising</p>
+                    </div>
+                    <div class="follow-button "><p>Follow</p></div>
+                </div>
+                <div class="follow-acc">
+                    <div class="follow-icon"><img src="images/woman.jpg"></div>
+                    <div class="follow-name">
+                        <h3>Kate Stevenson</h3>
+                        <p>Fashion / Visual Merchandising</p>
+                    </div>
+                    <div class="follow-button active"><p>Follow</p></div>
+                </div>
+                <div class="follow-acc">
+                    <div class="follow-icon"><img src="images/woman.jpg"></div>
+                    <div class="follow-name">
+                        <h3>Kate Stevenson</h3>
+                        <p>Fashion / Visual Merchandising</p>
+                    </div>
+                    <div class="follow-button active"><p>Follow</p></div>
+                </div>
+                <div class="follow-acc">
+                    <div class="follow-icon"><img src="images/woman.jpg"></div>
+                    <div class="follow-name">
+                        <h3>Kate Stevenson</h3>
+                        <p>Fashion / Visual Merchandising</p>
+                    </div>
+                    <div class="follow-button"><p>Follow</p></div>
+                </div>
+                <div class="follow-acc">
+                    <div class="follow-icon"><img src="images/woman.jpg"></div>
+                    <div class="follow-name">
+                        <h3>Kate Stevenson</h3>
+                        <p>Fashion / Visual Merchandising</p>
+                    </div>
+                    <div class="follow-button active"><p>Follow</p></div>
+                </div>
+                <div class="follow-acc">
+                    <div class="follow-icon"><img src="images/woman.jpg"></div>
+                    <div class="follow-name">
+                        <h3>Kate Stevenson</h3>
+                        <p>Fashion / Visual Merchandising</p>
+                    </div>
+                    <div class="follow-button active"><p>Follow</p></div>
+                </div>
+                <div class="follow-acc">
+                    <div class="follow-icon"><img src="images/woman.jpg"></div>
+                    <div class="follow-name">
+                        <h3>Kate Stevenson</h3>
+                        <p>Fashion / Visual Merchandising</p>
+                    </div>
+                    <div class="follow-button active"><p>Follow</p></div>
+                </div>
+                <div class="follow-acc">
+                    <div class="follow-icon"><img src="images/woman.jpg"></div>
+                    <div class="follow-name">
+                        <h3>Kate Stevenson</h3>
+                        <p>Fashion / Visual Merchandising</p>
+                    </div>
+                    <div class="follow-button active"><p>Follow</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
         <!-- Header
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <section class="header">
@@ -35,6 +115,15 @@
             <li class="bell"></li>
             <li class="man"></li>
             <li class="set"></li>
+        </ul>
+        <div class="hamburger"></div>
+        <ul class="navbar-login-mobile">
+            <li class="upload-mobile"><img src="images/upload.svg" width="24px">Upload project</li>
+            <li class="search-mobile"><img src="images/loupe11.svg" width="24px">Search</li>
+            <li class="mail-mobile"><img src="images/email-2.svg" width="24px">Networking</li>
+            <li class="bell-mobile"><img src="images/item-4.svg" width="24px">Notifications</li>
+            <li class="man-mobile"><img src="images/item-5.svg" width="24px">Profile</li>
+            <li class="set-mobile"><img src="images/gear.svg" width="24px">Settings</li>
         </ul>
     </section>
     <section class="profile-hero">
@@ -88,7 +177,6 @@ However none of the things mentioned above are more important than the type of p
                 <div class="grid-item"><img align="middle"  src="images/2-3.jpg"></div>
                 <div class="grid-item"><img align="middle"  src="images/3-3-2-x.jpg"></div>
                 <div class="grid-item"><img align="middle"  src="images/4-3.jpg"></div>
-                <div class="more">Show more</div>
             </div>
         </div>
     </section>
@@ -128,9 +216,91 @@ However none of the things mentioned above are more important than the type of p
         </div>
     </section>
     <script
-  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-  crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
+></script>
+    <script
+  src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+></script>
+    <script src="EasyAutocomplete/jquery.easy-autocomplete.min.js"></script>
+    <script>
+    $(document).ready(function(){
+	$('.select').each(function(){
+		// Variables
+		var $this = $(this),
+			selectOption = $this.find('option'),
+			selectOptionLength = selectOption.length,
+			selectedOption = selectOption.filter(':selected'),
+			dur = 500;
+
+		$this.hide();
+		// Wrap all in select box
+		$this.wrap('<div class="select"></div>');
+		// Style box
+		$('<div>',{
+			class: 'select__gap',
+			text: 'Select industry'
+		}).insertAfter($this);
+		
+		var selectGap = $this.next('.select__gap'),
+			caret = selectGap.find('.caret');
+		// Add ul list
+		$('<ul>',{
+			class: 'select__list'
+		}).insertAfter(selectGap);		
+
+		var selectList = selectGap.next('.select__list');
+		// Add li - option items
+		for(var i = 0; i < selectOptionLength; i++){
+			$('<li>',{
+				class: 'select__item',
+				html: $('<span>',{
+					text: selectOption.eq(i).text()
+				})				
+			})
+			.attr('data-value', selectOption.eq(i).val())
+			.appendTo(selectList);
+		}
+		// Find all items
+		var selectItem = selectList.find('li');
+
+		selectList.slideUp(0);
+		selectGap.on('click', function(){
+			if(!$(this).hasClass('on')){
+				$(this).addClass('on');
+				selectList.slideDown(dur);
+
+				selectItem.on('click', function(){
+					var chooseItem = $(this).data('value');
+                    $('.select .select__gap').addClass("active");
+					$('select').val(chooseItem).attr('selected', 'selected');
+					selectGap.text($(this).find('span').text());
+
+					selectList.slideUp(dur);
+					selectGap.removeClass('on');
+				});
+				
+			} else {
+				$(this).removeClass('on');
+				selectList.slideUp(dur);
+			}
+		});		
+
+	});
+			$(".search").click(function(){
+				$(".search-block").slideToggle('slow');
+                $('.search').toggleClass('active');
+			});
+            $(".add-search-filters").click(function(){
+				$(".search-filters").slideToggle('slow');
+                $('.add-search-filters').toggleClass('active');
+			});
+            $(".hamburger").click(function(){
+				$(".navbar-login-mobile").slideToggle('slow');
+                $('.hamburger').toggleClass('active');
+                $('body').toggleClass('active');
+			});
+		
+    });
+    </script>
 </body>
 </html>

@@ -828,13 +828,15 @@
                                                 /* Following */
 
 
-
+#following{
+    display: none;
+}
 .following-window{
     width: 876px;
     height: 800px;
     margin: 0 auto;
     background-color: #fff;
-    margin-top: 112px;
+    margin-top: 3%;
 }
 .close{
     font-family: Raleway;
@@ -1021,7 +1023,7 @@
 
 
 
-/* Header */
+                                                    /* Header */
 .more{
     display: none;
 }
@@ -1962,7 +1964,7 @@
         margin-left: 10%;
     }
 }
-                                            /* Account */
+                                            /* Profile */
 
 .navbar-login{
     margin: 0;
@@ -2162,10 +2164,115 @@
     padding-right: 133px;
     text-align: center;
 }
-
-
-
-
+@media (max-width: 1360px){
+    .about-me-profile{
+        width: 500px;
+    }
+}
+@media (max-width: 1130px){
+    .grid-2{
+        padding-left: 10%;
+        padding-right: 10%;
+        column-count: 3;
+    }
+    .main-info{
+        width: auto;
+    }
+    .stats a{
+        margin-right: 20px;
+        float: left;
+        text-align: center;
+    }
+    .about-me-profile{
+        width: 90%;
+        margin-left: 0;
+    }
+    .overlay{
+        padding-left: 100px;
+    }
+    .profile-info{
+        margin-left: 100px;
+    }
+    .skill-value{
+        margin-right: 40px;
+    }
+}
+@media (max-width: 767px){
+    .stats a span{
+        display: block;
+    }
+    .grid-2 .grid-item{
+        width: auto;
+        height: auto;
+        
+    }
+    .grid-2 .grid-item img{
+        width: 100%;
+        height: auto;
+        
+    }
+    .main-info{
+        border: none;
+    }
+    .skill-value{
+        margin-right: 0;
+    }
+    .profile-hero{
+        height: 210px;
+    }
+    .overlay{
+        padding-left: 15px;
+        padding-top: 80px;
+    }
+    .profile-info{
+        margin-left: 16px;
+        margin-bottom: 40px;
+    }
+    .grid-2{
+        padding-left: 5%;
+        padding-right: 5%;
+        column-count: 2;
+    }
+    .overlay h1{
+        margin-bottom: 15px;
+        font-size: 22px;
+        height: auto;
+    }
+    .stats a{
+        font-size: 13px;
+    }
+    .stats a:last-child{
+        margin-right: 0;
+    }
+    .profile-body{
+        position: relative;
+    }
+    .about-me-profile a{
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        font-size: 13px;
+    }
+    .skill-name{
+        font-size: 15px;
+    }
+    .skill-value{
+        font-size: 15px;
+    }
+    .about-me-profile h2{
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+    .about-me-profile p{
+        font-size: 14px;
+    }
+    
+}
+@media (max-width: 450px){
+    .grid-2{
+        column-count: 1;
+    }
+}
 
 
 
