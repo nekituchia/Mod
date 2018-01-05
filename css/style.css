@@ -36,7 +36,7 @@
 
 .login-content{
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 5%;
     width: 1105px;
     position: relative;
 }
@@ -216,7 +216,7 @@
 
 @media (max-width: 1150px){
     .login-content{
-        margin-top: 5%;
+        margin-top: 2%;
         width: 745px;
     }
     .login-image{
@@ -407,7 +407,7 @@
 
 .signup-content{
     margin: 0 auto;
-    margin-top: 10%;
+    margin-top: 5%;
     width: 1105px;
     position: relative;
 }
@@ -578,7 +578,7 @@
 
 @media (max-width: 1150px){
     .signup-content{
-        margin-top: 5%;
+        margin-top: 2%;
         width: 745px;
     }
     .signup-image{
