@@ -2176,7 +2176,7 @@
         column-count: 3;
     }
     .main-info{
-        width: auto;
+        width: 370px;
     }
     .stats a{
         margin-right: 20px;
@@ -2198,6 +2198,9 @@
     }
 }
 @media (max-width: 767px){
+    .main-info{
+        width: 200px;
+    }
     .stats a span{
         display: block;
     }
@@ -2266,6 +2269,7 @@
     .about-me-profile p{
         font-size: 14px;
     }
+    
     
 }
 @media (max-width: 450px){
@@ -4250,7 +4254,15 @@ margin-top: 2px;
 .hamburger{
     display: none;
 }
+@media (max-width: 1130px){
+    .about-me-profile.employer{
+        margin-top: 60px;
+    }
+}
 @media (max-width: 767px){
+    .profile-company{
+        font-size: 13px;
+    }
     .images-discover .grid-1{
         column-count: 2;
         max-width: 90%;
@@ -4326,7 +4338,19 @@ margin-top: 2px;
     body.active{
         overflow:hidden;
     }
+    .contact-me{
+        width: 213px;
+        height: 35px;
+        font-size: 14px;
+        position:absolute;
+        top: 150px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+    
 }
+
 @media (max-width: 450px){
     .images-discover .grid-1{
         column-count: 1;
