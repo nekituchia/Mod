@@ -127,41 +127,156 @@
         </ul>
     </section>
     <section class="profile-hero">
-        <div class="overlay">
-            <h1>Interior Designer</h1>
-            <div class="stats">
-                <a href="#"><span>701</span> Projects</a>
-                <a href="#"><span>701</span> Applauds</a>
-                <a href="#"><span>701</span> Followers</a>
-                <a href="#" class="following"><span>701</span> Following</a>
+        <div class="overlay edit">
+            <input type="text" class="industry" placeholder="i.e. Interior Designer, Writer, Creative Director">
+            <div class="overlay-photo">
+                <img src="images/camera.svg" class="camera">
+                <p>Drag feature photo to change<br> profile cover or <a href="#">upload from the computer</a></p>
+                <a href="#" class="mobile-photo">Upload from the library</a>
             </div>
         </div>
     </section>
     <section class="profile-body">
         <div class="profile-info clearfix">
-            <div class="main-info">
-                <div class="skill-name">
-                    <div>Industry :</div>
-                    <div>Department :</div>
-                    <div>Experience :</div>
-                    <div>Availability :</div>
-                    <div>Location :</div>
-                </div>
-                <div class="skill-value">
-                    <div>Fashion</div>
-                    <div>Visual Merchandising</div>
-                    <div>5 – 10 years</div>
-                    <div>Full time</div>
-                    <div>Brooklyn, NY</div>
-                </div>
+            <div class="main-info edit clearfix">
+                <div class="select-option">
+                        <div class="form-group">
+                            <label class="lables">Your Industry</label>
+                            <select class="form-control form-style-muse select">
+                                <option value="" disabled selected hidden>Select industry</option>
+                                <option>Advertising</option>
+                                <option>Architecture</option>
+                                <option>Branding</option>
+                                <option>Ceramics</option>
+                                <option>Crafting</option>
+                                <option>Drawing</option>
+                                <option>Fashion</option>
+                                <option>Film</option>
+                                <option>Fine Art</option>
+                                <option>Food/Cooking</option>
+                                <option>Design</option>
+                                <option>Gaming/Toy</option>
+                                <option>Graphic Design</option>
+                                <option>Interior Design</option>
+                                <option>Make-up</option>
+                                <option>Media</option>
+                                <option>Digital Media</option>
+                                <option>Marketing</option>
+                                <option>Music</option>
+                                <option>Painting</option>
+                                <option>Photography</option>
+                                <option>Production/Post-production</option>
+                                <option>Publishing</option>
+                                <option>Radio</option>
+                                <option>Retail</option>
+                                <option>Screenwriting</option>
+                                <option>Sculpture</option>
+                                <option>Styling</option>
+                                <option>Television</option>
+                                <option>Video</option>
+                                <option>Web Development</option>
+                                <option>Written Word</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+                <div class="select-option">
+                        <div class="form-group">
+                            <label class="lables">Your department</label>
+                            <select class="form-control form-style-muse select">
+                                <option value="" disabled selected hidden>Select department</option>
+                                <option>Advertising</option>
+                                <option>Architecture</option>
+                                <option>Branding</option>
+                                <option>Ceramics</option>
+                                <option>Crafting</option>
+                                <option>Drawing</option>
+                                <option>Fashion</option>
+                                <option>Film</option>
+                                <option>Fine Art</option>
+                                <option>Food/Cooking</option>
+                                <option>Design</option>
+                                <option>Gaming/Toy</option>
+                                <option>Graphic Design</option>
+                                <option>Interior Design</option>
+                                <option>Make-up</option>
+                                <option>Media</option>
+                                <option>Digital Media</option>
+                                <option>Marketing</option>
+                                <option>Music</option>
+                                <option>Painting</option>
+                                <option>Photography</option>
+                                <option>Production/Post-production</option>
+                                <option>Publishing</option>
+                                <option>Radio</option>
+                                <option>Retail</option>
+                                <option>Screenwriting</option>
+                                <option>Sculpture</option>
+                                <option>Styling</option>
+                                <option>Television</option>
+                                <option>Video</option>
+                                <option>Web Development</option>
+                                <option>Written Word</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="radios first">
+                            <p class="lables">Your Expirence</p>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selecto">
+                                        <label for="f-option">1 - 5<br><span> years</span></label>
+                                        <div class="check"></div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="s-option" name="selecto">
+                                        <label for="s-option">5 - 10<br><span> years</span></label>
+                                        <div class="check"><div class="inside"></div></div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="t-option" name="selecto">
+                                        <label for="t-option">10+<br><span> years</span></label>
+                                        <div class="check"><div class="inside"></div></div>
+                                    </li>
+                                </ul>
+                    </div>
+                    <div class="radios last">
+						<p class="radio-buttons-lable">Your Availability</p>
+							<ul>
+								<li>
+									<input type="radio" id="f-option-1" name="selector">
+									<label for="f-option-1">Full Time</label>
+									<div class="check check1"></div>
+								</li>
+								<li>
+									<input type="radio" id="s-option-1" name="selector">
+									<label for="s-option-1">Part Time</label>
+									<div class="check check1"><div class="inside"></div></div>
+								</li>
+								<li>
+									<input type="radio" id="t-option-1" name="selector">
+									<label for="t-option-1">Freelance </label>
+									<div class="check check1"><div class="inside"></div></div>
+								</li>
+							</ul>
+				    </div>
+                    <div class="select-option">
+                        <div class="form-group">
+                            <label class="lables">Your location</label>
+                            <input id="location-search" class="location form-style-muse" placeholder="Select location"/>
+                        </div>
+                    </div>
             </div>
-            <div class="about-me-profile">
-                <a href="#">Edit profile</a>
+            <div class="about-me-profile edit">
+                <a class="cancel" href="#">Cancel</a>
+                <a class="save-changes" href="#">Save changes</a>
                 <h2>About Me</h2>
-                <p><span>There are many things that are important to catalog design. Your images must be sharp and appealing. Your text and even the font you use for the text is important. The cover page design and the design of your catalog’s product pages all play important roles in designing a catalog that will bring in new customers and sales.</span>
-However none of the things mentioned above are more important than the type of paper you will choose to print your catalog on. The “feel” of your catalog is important to your potential customers. The longer they have your catalog in their hands, the more product they will buy. In this article I will go over some of the many paper choices you have to print your catalog on.
-                    
-                </p>
+                <div class="edit-text">
+                    <p><span>There are many things that are important to catalog design. Your images must be sharp and appealing. Your text and even the font you use for the text is important. The cover page design and the design of your catalog’s product pages all play important roles in designing a catalog that will bring in new customers and sales.</span>
+    However none of the things mentioned above are more important than the type of paper you will choose to print your catalog on. The “feel” of your catalog is important to your potential customers. The longer they have your catalog in their hands, the more product they will buy. In this article I will go over some of the many paper choices you have to print your catalog on.         
+                    </p>
+                </div>
             </div>
         </div>
         <div class="profile-gallery">
@@ -299,13 +414,7 @@ However none of the things mentioned above are more important than the type of p
                 $('.hamburger').toggleClass('active');
                 $('body').toggleClass('active');
 			});
-            $(".following").click(function(){
-				$("#following").fadeIn('slow');
-			});
-            $(".close").click(function(){
-				$("#following").fadeOut('slow');
-			});
-		      
+		
     });
     </script>
 </body>
